@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            text-decoration: underline;
+        }
+        /* child 셀렉터 */
+        .error > p {
+            background-color: yellow;
+        }
+
+        div > p {
+            border: 3px solid
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore aspernatur vel eius aliquid exercitationem nulla doloremque reiciendis dolor nostrum expedita, impedit aliquam rem similique, quo numquam atque molestias incidunt. Minima.
+            </p>
+        </div>
+    </div>
+
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam voluptates, fugit saepe nemo modi, debitis sequi voluptas ut quam ea esse nesciunt. Dolorem animi aut enim quia reprehenderit eligendi. Expedita!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
