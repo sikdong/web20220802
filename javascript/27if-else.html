@@ -16,6 +16,20 @@
             // if의 조건 결과가 false일 때 실행되는 코드 블럭
             console.log(77);
         }
+    // prompt를 띄워서 나이를 입력 받고 else 기능 추가
+
+    let age = prompt("나이를 입력하세요.");
+
+    age = Number(age);
+
+    // or
+    //let age = Number(prompt("나이를 입력하세요."));
+
+    if(age >= 20) {
+        console.log("어른입니다");
+    } else {
+        console.log("아이입니다");
+    }
 
     </script>
 </body>
