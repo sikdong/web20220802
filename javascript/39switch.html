@@ -8,15 +8,23 @@
 </head>
 <body>
 
-    <script>
-        // 자바스크립트 주석
-        // 단축키 ctrl + /
-        
-        /*
-            여러 줄 
-            주석
-            */
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        let first = prompt("mbti 첫 글자를 입력해주세요.");
+
+        switch (first ) {
+            case "I"
+            case "i" :
+                console.log("내향적");
+                break;
+                
+            case "E"    
+            case "e" :
+                console.log("외향적");
+                break;
+            default:
+                console.log("e나 i를 입력해주세요.");    
+        }
+    </script>
 </body>
 </html>
