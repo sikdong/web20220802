@@ -16,8 +16,12 @@
             return 99;
         }
 
-        myfunc1();
-        myfunc1();
+        let a = myfunc1(); // 함수 실행이 먼저 된 후 return 키워드에 의해 myfunc1는 99가 됨
+        let b = myfunc1();
+        
+        console.log(a); // 99
+        console.log(b); // 99
+
         
 
     </script>

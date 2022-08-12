@@ -12,19 +12,19 @@
     <script>
         
         function sum(num) {
-        //     let sum = 0;
-        //     for (let i = 1; i<= num; i++){
-        //         sum +=i;
-        //     }
-        //     return sum;
-        // }
+            //     let sum = 0;
+            //     for (let i = 1; i<= num; i++){
+            //         sum +=i;
+            //     }
+            //     return sum;
+            // }
 
-        for (let i = 0; i<=num; i++){
-            i+=1;
+            for (let i = 0; i<=num; i++){
+                i+=1;
+            } // let 은 for 문안에서만 작동
+
+            return i;
         }
-
-        return i;
-    }
         let res = sum(10) + sum(100)
 
         console.log(res); // 1~10 정수의 합 + 1~100 정수의 합

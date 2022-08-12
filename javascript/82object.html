@@ -10,16 +10,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        if (true) {
-            // 코드 블럭 내의 명령문이 하나이면 중괄호{} 생략 가능
-            console.log(1);
-        } else if (true) { 
-            console.log(2);
-        } else { 
-            console.log(3);
+        let a = {
+            name: "donald",
+            age: 40,
+            car: {
+                model: "tesla",
+                color: "white",
+                weight: 1000;
+            }
         }
 
-        // 코드 블럭 내의 명령문들은 들여쓰기 꼭 할 것!
+        console.log(a.car.model);
+        console.log(a.car.color);
+        console.log(a.car.weight);
+
+        //model, color, weight 변경하는 코드 작성
+
+        a.car.model = "sonata";
+        a.car.color = "black";
+        a.car.weight = 5000;
+
+        console.log(a.car);
 
     </script>
 </body>
