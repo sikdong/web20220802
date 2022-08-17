@@ -20,19 +20,19 @@
 
         document.querySelector("btn1").addEventListener("click", function() { 
             let val = document.querySelector("input1").value;
-            document.querySelector("#container1").insertAdjacentElement("beforebegin", "<p>"+val+"</p>");
+            document.querySelector("#container1").insertAdjacentHTML("beforebegin", "<p>"+val+"</p>");
         });
 
         document.querySelector("btn2").addEventListener("click", function() { 
-            document.querySelector("#container1").insertAdjacentElement("afterbegin", "<p>"+val+"</p>");
+            document.querySelector("#container1").insertAdjacentHTML("afterbegin", "<p>"+val+"</p>");
         });
 
         document.querySelector("btn3").addEventListener("click", function() { 
-            document.querySelector("#container1").insertAdjacentElement("beforeend", "<p>"+val+"</p>");
+            document.querySelector("#container1").insertAdjacentHTML("beforeend", "<p>"+val+"</p>");
         });
 
         document.querySelector("btn4").addEventListener("click", function() { 
-            document.querySelector("#container1").insertAdjacentElement("afterend", "<p>" +val+"</p>");
+            document.querySelector("#container1").insertAdjacentHTML("afterend", "<p>" +val+"</p>");
         });
         
     </script>

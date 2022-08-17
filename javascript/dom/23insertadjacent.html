@@ -33,13 +33,13 @@
         document.querySelector("#btn3").addEventListener("click", function() { 
             let val = document.querySelector("#input1").value;
             document.querySelector("#container1")
-            .insertAdjacentElement("beforeend", "<p>"+val+"</p>");
+            .insertAdjacentHTML("beforeend", "<p>"+val+"</p>");
         });
 
         document.querySelector("#btn4").addEventListener("click", function() { 
             let val = document.querySelector("#input1").value;
             document.querySelector("#container1")
-            .insertAdjacentElement("afterend", "<p>" + val + "</p>");
+            .insertAdjacentHTML("afterend", "<p>" + val + "</p>");
         });
         
     </script>
