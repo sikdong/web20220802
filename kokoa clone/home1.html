@@ -3,23 +3,28 @@
 <head>
     <style>
     body {
-        height: 100vh;
+        height: 1000vh;
+        width: 1000vh;
         /* <!-- flexbox는 자식 요소에 쓰면 안된다 --> */
-        display: flex;
         margin: 20px;
-        /* 밑에 요소를 쓰기 위해선 무조건 display:flex; */
-        /* 주축(가로축)에서 기본적으로 움직임 변경 가능 */
-        justify-content: space-between;
-        /* 교차축(세로축)에서 기본적으로 움직임 변경 가능*/
-        align-items: center;
     }
     div {
-        width: 50px;
-        height: 50px;
+        color: white;
+        width: 300px;
+        height: 300px;
         background-color: teal;
     }
-    #second {
-        background-color: beige;
+    #green {
+        position: fixed;
+        /* 레이어 위로 올라감 스크롤을 내려도 항상 그자리에
+        위치하면서 다른 레이어들 위에 있음 넷플릭스 메뉴바 생각
+        스크롤을 내려도 항상 위에 위치함
+        */
+        opacity: 0.2;
+
+    }
+    #different{
+        background-color: wheat;
     }
     </style>
     <meta charset="utf-8">
@@ -29,10 +34,8 @@
     <title>Home-my web site</title>
 </head>
 <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
-    
+    <div id="green"></div>
+    <div id="different"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
         
