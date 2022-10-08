@@ -1,0 +1,33 @@
+body {
+    background-color: tomato;
+
+}
+
+.flex {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    width: 250px;
+    height: 250px;
+    background-color: bisque;
+    border: 3px solid black;
+
+}
+
+.second {
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    border: 2px solid white;
+}
+
+.dashed {
+    width: 200px;
+    height: 50px;
+    border: 2px dashed white;
+
+}
