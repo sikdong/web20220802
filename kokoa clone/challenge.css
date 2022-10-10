@@ -8,26 +8,32 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .first {
-    width: 250px;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 300px;
     background-color: bisque;
     border: 3px solid black;
 
 }
 
 .second {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-color: teal;
     border: 2px solid white;
 }
 
 .dashed {
-    width: 200px;
-    height: 50px;
+    
+    width: 250px;
+    height: 75px;
     border: 2px dashed white;
 
 }
